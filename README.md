@@ -1,2 +1,2 @@
 # sample
-this is sample 3
+this is sample issue2
