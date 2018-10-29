@@ -1,5 +1,5 @@
 # sample
-this is sample さしすせそ
+this is sample たちつてと
 
 
 テストです。
