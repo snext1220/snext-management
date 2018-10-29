@@ -1,2 +1,2 @@
 # sample
-this is sample issue2
+this is sample あいうえお
