@@ -86,7 +86,12 @@
 $(function(){
   $('#nav_toggle').click(function(){
     $("header").toggleClass('open');
-    $("nav").slideToggle(500);
+    let nav = $('nav');
+    nav.slideToggle(500, function() {
+      if(nav.css('display') === 'none') {
+        nav.removeAttr('style');
+      }
+    });
   });
 });
 </script>
