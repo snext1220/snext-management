@@ -1,0 +1,137 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<style>
+/*
+#header, #content, #footer {
+  width: 760px;
+  margin: 0px auto;
+}
+
+#header {
+  height: 80px;
+  background-color: #f00;
+}
+
+#footer {
+  height: 80px;
+  background-color: #00f;
+}
+
+#content {
+  min-height: 500px;
+}
+
+#menu {
+  width: 200px;
+  max-width: 200px;
+  float: left;
+  margin: 0px;
+  min-height: 200px;
+  background-color: #f0f;
+}
+
+#main {
+  width: 560px;
+  float: right;
+  margin: 0px;
+  min-height: 500px;
+  height: 1500px;
+  background-color: #0ff;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+*/
+
+/*
+.container {
+  padding: 1%;
+}
+*/
+
+#screen {
+  width: 760px;
+  margin: 0px auto;
+}
+
+
+#header, #footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: #f00;
+}
+
+#content {
+  display: flex;
+  padding: 20px 0;
+}
+
+#main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2000px;
+  margin-right: 10px;
+  background: #ccc;
+  background: linear-gradient(to bottom, #eeeeee 0%,#B7EAE0 100%);
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  background: #30b298;
+}
+</style>
+<!--
+<script src="https://unpkg.com/pretty-scroll@1.1.4/js/pretty-scroll.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+  new PrettyScroll('#menu', {
+    container: '#screen',
+    offsetTop: 20,
+    offsetBottom: 0,
+    breakpoint: 0
+  });
+});
+</script>
+-->
+</head>
+<body>
+<div id="screen">
+  <div id="header"></div>
+  <div id="content" class="clearfix">
+    <div id="menu">
+      <ul>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+        <li>aaaaaaaaaaa</li>
+      </ul>
+    </div>
+    <div id="main"></div>
+  </div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>
