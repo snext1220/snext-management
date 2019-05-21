@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	height: 100%;
+}
+body{
+	background: linear-gradient(-135deg, #006598, #001464);
+	margin: 0;
+	height: 100%;
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+img{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+.inner{
+	width: 960px;
+	margin: 0 auto;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background-color: #999;
+	padding: 32px 0;
+}
+header .inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+h1{
+	width: 160px;
+	margin-right: auto;
+}
+header nav {
+	margin-right: -16px;
+}
+header nav ul{
+	display: flex;
+	align-items: center;
+	
+}
+header nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 16px ;
+}
+
+#main_img{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#nav_toggle{
+	display: none;
+}
+
+#logo{
+	margin-top: 70px;
+}
+
+.main{
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 30px;
+  width: 700px;
+}
+
+.change_btn{
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 25px 0;
+	font-size:20px;
+	margin-top: 40px;
+}
+
+/*スマホ・タブレット用の設定*/
+@media screen and (max-width:960px){
+	header{
+		padding: 16px 0;
+	}
+	h1{
+		width: 120px;
+	}
+	.inner{
+		width: 90%;
+	}
+	#main_img{
+		width: 100%;
+	}
+	.change_btn{
+		width: 90%;
+		margin: 32px auto;
+	}
+	
+	/*メニュー部分*/
+	nav{
+		display: none;
+		position: absolute;
+		top:72px;
+		width: 100%;
+		background: #006598;
+		left: 0;
+	}
+	header nav ul{
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+	header nav ul li{
+		margin: 0 auto;
+		text-align: center;
+		border-bottom: 1px solid #fff;
+	}
+	header nav ul li:last-child{
+		border: none;
+	}
+	header nav ul li a{
+		display: block; 
+	}
+	
+		
+	/*開閉ボタン*/
+	#nav_toggle{
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 4px;
+		z-index: 100;
+	}
+	#nav_toggle div {
+		position: relative;
+	}
+	#nav_toggle span{
+		display: block;
+		height: 3px;
+		background: #fff;
+		position:absolute;
+		width: 100%;
+		left: 0;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;	
+	}
+	#nav_toggle span:nth-child(1){
+		top:0px;
+	}
+	#nav_toggle span:nth-child(2){
+		top:12px;
+	}
+	#nav_toggle span:nth-child(3){
+		top:24px;
+	}
+	
+	/*開閉ボタンopen時*/
+	.open #nav_toggle span:nth-child(1) {
+			top: 12px;
+		   -webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+		.open #nav_toggle span:nth-child(2) {
+			width: 0;
+			left: 50%;
+		}
+		.open #nav_toggle span:nth-child(3) {
+			top: 12px;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
+	
+	.main {
+		width: 77%;
+	}
+}

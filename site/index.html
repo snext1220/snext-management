@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSSで作るハンバーガーメニュー！</title>
+<link rel="stylesheet" type="text/css" href="basic.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner clearfix">
+			<h1><a href="#"><img src="img/h1_logo.svg" alt=""></a>
+			</h1>
+			<div class="" id="nav_toggle">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">MENU1</a></li>
+					<li><a href="#">MENU2</a></li>
+					<li><a href="#">MENU3</a></li>
+					<li><a href="#">MENU4</a></li>
+					<li><a href="#">MENU5</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="main_img">
+		<ul>
+			<li><img id="logo" src="img/img01@2x.png" alt="" ></li>
+		</ul>
+	</section>
+	<section class="main">
+  <h3>ソーサリアン Textとは！？</h3>
+  <p>「ソーサリアンText」（略称：SText）は、ソーサリアンの世界を古典的なゲームブックの形式で再現しようという試み。新世代言語SGML（Sorcerian Gamebook Markup Language）を採用し、自ら創造した世界（シナリオ）を即座に、かつ、無限に公開できるプラットフォームが特徴だ。</p>
+  <p>標準提供される基本シナリオに加えて、今後も順次追加シナリオを公開予定。開発者マニュアルも完備しているので、「我も」という誉れ高き勇者は自作シナリオを［Post（作品投稿）］ページから投稿してほしい。</p>
+  <p>来たれ、ソーサリアン、無限の冒険譚へ…！</p>
+	</section>
+</body>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_toggle').click(function(){
+						$("header").toggleClass('open');
+				$("nav").slideToggle(500);
+					});
+
+		});
+	</script>
+</html>
